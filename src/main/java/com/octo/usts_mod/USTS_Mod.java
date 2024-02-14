@@ -42,7 +42,7 @@ public class USTS_Mod
         ModSounds.register(eventBus);
         eventBus.addListener(this::curiosSetup);
         eventBus.addListener(this::clientSetup);
-        eventBus.addListener(this::registerLayers);
+        eventBus.addListener(CuriosLayerDefinitions::registerLayers);
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
@@ -69,10 +69,5 @@ public class USTS_Mod
     private void clientSetup(final FMLClientSetupEvent evt) {
         CuriosRendererRegistry.register(Items.LIGHTNING_ROD, LightningRodRenderer::new);
         CuriosRendererRegistry.register(Items.TORCH, TorchRenderer::new);
-    }
-
-    private void registerLayers(final EntityRenderersEvent.RegisterLayerDefinitions evt) {
-        evt.registerLayerDefinition(CuriosLayerDefinitions.LIGHTNING_ROD, () -> LightningRodModel.createLayer(new CubeDeformation(0, 0, 0), 0));
-        evt.registerLayerDefinition(CuriosLayerDefinitions.TORCH, () -> TorchModel.createLayer(new CubeDeformation(0, 0, 0), 0));
     }
 }
