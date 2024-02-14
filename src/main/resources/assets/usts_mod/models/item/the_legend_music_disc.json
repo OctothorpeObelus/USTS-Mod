@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "usts_mod:item/the_legend_music_disc"
+  }
+}

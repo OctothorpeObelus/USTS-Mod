@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "minecraft:obsidian"
+  },
+  "result": "usts_mod:rock_n_roll_music_disc",
+  "count": 1
+}

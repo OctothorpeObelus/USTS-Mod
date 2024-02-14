@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "minecraft:obsidian"
+  },
+  "result": "usts_mod:the_legend_music_disc",
+  "count": 1
+}

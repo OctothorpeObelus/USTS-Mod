@@ -1,0 +1,31 @@
+{
+  "the_legend": {
+    "subtitle": "sounds.usts_records.the_legend_music_disc",
+    "sounds": [
+      {
+        "name": "usts_mod:music/the_legend",
+        "stream": true
+      }
+    ]
+  },
+
+  "rock_n_roll": {
+    "subtitle": "sounds.usts_mod.rock_n_roll_music_disc",
+    "sounds": [
+      {
+        "name": "usts_mod:music/rock_n_roll",
+        "stream": true
+      }
+    ]
+  },
+
+  "napalm": {
+    "subtitle": "sounds.usts_mod.napalm_music_disc",
+    "sounds": [
+      {
+        "name": "usts_mod:music/napalm",
+        "stream": true
+      }
+    ]
+  }
+}

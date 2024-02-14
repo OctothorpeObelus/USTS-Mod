@@ -1,0 +1,12 @@
+{
+  "item.usts_mod.the_legend_music_disc": "§bMusic Disc",
+  "item.usts_mod.the_legend_music_disc.desc": "Jerry Reed - The Legend",
+  "item.usts_mod.rock_n_roll_music_disc": "§bMusic Disc",
+  "item.usts_mod.rock_n_roll_music_disc.desc": "Wesley Willis - Rock 'n Roll McDonalds",
+  "item.usts_mod.napalm_music_disc": "§bMusic Disc",
+  "item.usts_mod.napalm_music_disc.desc": "First of The Ninth Chorus - Napalm Sticks To Kids",
+
+  "sounds.usts_mod.the_legend_music_disc": "Jerry Reed - The Legend",
+  "sounds.usts_mod.rock_n_roll_music_disc": "Wesley Willis - Rock 'n Roll McDonalds",
+  "sounds.usts_mod.napalm_music_disc": "FoTNC - Napalm Sticks To Kids"
+}
