@@ -4,6 +4,7 @@ import com.octo.usts_mod.USTS_Mod;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraftforge.client.event.RenderLivingEvent;
+import net.minecraftforge.event.entity.player.PlayerEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 
@@ -20,9 +21,15 @@ public class PlayerLogger {
 
     // Keep track of players logging into the world.
     @SubscribeEvent
-    public static void playerJoinedWorld(RenderLivingEvent event) {
+    public static void PlayerLoggedInEvent(PlayerEvent.PlayerLoggedInEvent event) {
         Entity ent = event.getEntity();
+        playerList.clear();
+        playerList.addAll(ent.getLevel().players());
+    }
 
+    @SubscribeEvent
+    public static void PlayerLoggedOutEvent(PlayerEvent.PlayerLoggedOutEvent event) {
+        Entity ent = event.getEntity();
         playerList.clear();
         playerList.addAll(ent.getLevel().players());
     }

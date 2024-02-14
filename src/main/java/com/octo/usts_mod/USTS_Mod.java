@@ -7,6 +7,7 @@ import com.octo.usts_mod.client.model.TorchModel;
 import com.octo.usts_mod.client.renderer.LightningRodRenderer;
 import com.octo.usts_mod.client.renderer.TorchRenderer;
 import com.octo.usts_mod.events.LightningEventHandler;
+import com.octo.usts_mod.events.PlayerLogger;
 import com.octo.usts_mod.gamerules.USTS_Gamerules;
 import com.octo.usts_mod.item.ModItems;
 import com.octo.usts_mod.sound.ModSounds;
@@ -46,6 +47,7 @@ public class USTS_Mod
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
         MinecraftForge.EVENT_BUS.register(LightningEventHandler.class);
+        MinecraftForge.EVENT_BUS.register(PlayerLogger.class);
 
         // Register gamerules
         USTS_Gamerules.register();
